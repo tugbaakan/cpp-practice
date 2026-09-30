@@ -142,6 +142,7 @@
     <ClCompile Include="cpp-practice.cpp" />
     <ClCompile Include="employee-management.cpp" />
     <ClCompile Include="function-overloading.cpp" />
+    <ClCompile Include="vector-practice.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="employee.h" />

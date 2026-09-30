@@ -24,6 +24,9 @@
     <ClCompile Include="employee-management.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="vector-practice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="employee.h">
