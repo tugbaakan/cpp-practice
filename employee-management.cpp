@@ -39,11 +39,16 @@ void createEmployee(int _employeeIdCounter, vector<Employee>& employeeList) {
 
     cout << "kullanici bilgileri basariyla girildi";
 
-    employeeList.emplace_back(_employeeIdCounter, name, title);
+    Employee emp1(1, name, title);
+    employeeList.push_back(emp1);
+
+    // employeeList.emplace_back(_employeeIdCounter, name, title);
 
 }
 
 void listEmployees(const vector<Employee>& employees) {
+
+    cout << "here are the employees : " << endl;
 
     for (const auto& emp : employees) {
         emp.print();
@@ -111,17 +116,19 @@ void deleteEmployee(vector<Employee>& employees) {
 
 }
 
-/*
+
 int main() {
 
     vector<Employee> vcEmployees;
+    int* pInt = new int(10);
 
     string userInput = "1";
     int employeeIdCounter = 0;
+    int newVariable = 26;
 
     while (userInput != "5")
     {
-
+        cout << endl;
         cout << "-------Personel yonetim sistemi----------" << endl;
         cout << "1. Personel Ekle" << endl;
         cout << "2. Personel listele" << endl;
@@ -140,6 +147,8 @@ int main() {
         else if (userInput == "2")
         {
             listEmployees(vcEmployees);
+            cout << *pInt;
+            
         }
         else if (userInput == "3")
         {
@@ -158,6 +167,7 @@ int main() {
 
     }
 
+    delete pInt;
+
     return 0;
 }
-*/
