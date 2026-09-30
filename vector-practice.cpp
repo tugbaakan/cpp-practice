@@ -7,7 +7,7 @@ void modifyVector(vector<int>& _integerVector) {
     for (auto& item : _integerVector) {
         if (item % 2 == 0)
         {
-            item = pow(item, 2);
+            item = item * item ;
         }
     }
 
